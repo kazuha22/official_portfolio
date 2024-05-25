@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Template</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #080808;
+            color: #f0ecec;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .section {
+            padding: 60px 0;
+            color: #f0ecec;
+        }
+        .section-heading {
+            margin-bottom: 40px;
+            color: #f0ecec;
+        }
+        .skills, .projects {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li, .projects li {
+            background: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 4px;
+            color: #080808;
+        }
+        .certificate {
+            background: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #080808;
+        }/* Styling for the home section */
+#home {
+    background-color: #212529;
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+.section-heading {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+/* Styling for the image */
+.img-fluid {
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+    </style>
+
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Bench <i class="fas fa-briefcase"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav mx-auto"> <!-- Changed ml-auto to mx-auto -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about"><i class="fas fa-user"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills"><i class="fas fa-cogs"></i> Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects"><i class="fas fa-project-diagram"></i> Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certificates"><i class="fas fa-certificate"></i> Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    
+
+<div class="container">
+    <section id="home" class="section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-left">
+                    <h1 class="section-heading">HELLO, I AM <span id="typed-text"></span></h1>
+                    <p class="lead">Administrative Assistant</p>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <img src="pic.jpg" alt="Your Image" class="img-fluid rounded-circle" style="max-width: 300px;">
+                </div>
+            </div>
+        </div>
+    </section> 
+</div>
+
+
+<script>
+    // Text for typing effect
+    const text = "Bench Samson";
+
+    let index = 0;
+
+    function type() {
+        document.getElementById('typed-text').innerText = text.slice(0, index);
+        index++;
+
+        if (index > text.length) {
+            index = 0;
+        }
+
+        setTimeout(type, 200); // Typing speed (adjust as needed)
+    }
+
+    type(); // Start typing when the page loads
+</script>
+
+<section id="about" class="section" style="display: none;" onclick="toggleAbout()">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="section-heading" style="font-family: 'Arial', sans-serif;">About Me</h2>
+                <p style="font-family: 'Arial', sans-serif;">I AM AN ASSISTANT WHO FELL IN LOVE WITH SOFTWARE. I LIKE DISCOVERING NEW TECHNOLOGIES AND BUILDING PROJECTS FROM SCRATCH. ALSO, I LIKE TO HELP PEOPLE WITH MY ABILITIES.</p>
+                <p style="font-family: 'Arial', sans-serif;">APART FROM ASSISTING, "I'm going to the peaceful place alone to do nothing but find peace for my mental well-being and refocus during break times."</p>
+            </div>
+            <div class="col-md-6 align-self-center">
+                <img src="pic.jpg" alt="Your Image" class="img-fluid rounded-circle" style="max-width: 300px;">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="experience" class="section" style="display: none;">
+    <h2 class="section-heading">Experience</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Administrative Assistant (Remote) | 2021-2023</h3>
+            <p>EDEN EQUITIES TRIO CONSTRUCTION REAL ESTATE COMPANY, DALLAS TEXAS, UNITED STATES (MAY-JULY)</p>
+            <ul>
+                <li> I really learned a lot specially in enhancing my soft skills.
+                    Working in a company is not all about being expert at technical stuffs. Sometimes, knowledge can only be executed properly and 
+                    efficiently using the right attitude and mindset.</li>
+            </ul>
+        </div>
+        <div class="col-md-6 text-center">
+            <img src="COE.png" alt="Certificate Image" class="img-fluid" style="max-width: 600px;">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Data Mining  | 2021</h3>
+            <p>EDEN EQUITIES TRIO CONSTRUCTION  REAL ESTATE COMPANY, DALLAS TEXAS, UNITED STATES</p>
+            <ul>
+                <li>Spearheaded comprehensive searches for potential housing and property development projects.</li>
+                <li>Applied advanced data mining techniques to systematically analyze real estate datasets and identify properties with potential for rehabilitation.</li>
+                <li>Compiled potential leads into Excel, providing a structured and organized approach to property management.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="skills" class="section" style="display: none;">
+    <h2 class="section-heading">Skills</h2>
+    <ul class="skills">
+        <li>Proficient in Microsoft Excel for creating detailed property reports.</li>
+        <li>Strong organizational skills, ensuring accuracy, completeness, and consistency in data entry.</li>
+        <li>Effective communication and collaboration.</li>
+        <li>I am highly skilled in being detail-oriented</li>
+        <li>Demonstrating advanced computer literacy skills, 
+            I excel in utilizing various software and applications, navigating digital environments with ease, and adapting swiftly to emerging technologies.  </li>
+        <li>Adaptability skill set</li>
+<li>Familiarity with Google Drive</li>
+</ul>
+
+</section>
+<section id="projects" class="section" style="display: none;">
+    <h2 class="section-heading">Projects</h2>
+    <ul class="projects">
+        <li>
+            <h4>Comprehensive Property Data Analysis</h4>
+            <p>Conducted a comprehensive data analysis of real estate properties to identify potential investment opportunities. Successfully identified several high-potential properties, leading to profitable investments for the company.</p>
+            <h5>Tools Used:</h5>
+            <ul class="list-inline">
+                <li class="list-inline-item"><i class="fab fa-microsoft"></i> Microsoft Excel</li>
+                <li class="list-inline-item"><i class="fas fa-database"></i> Data mining tools and techniques</li>
+            </ul>
+            <h5>Outcome:</h5>
+            <p>Successfully identified several high-potential properties, leading to profitable investments for the company.</p>
+        </li>
+        <li>
+            <h4>Efficient Invoice Management System</h4>
+            <p>Developed an efficient system for managing invoices from various contractors, ensuring timely payments and accurate record-keeping. Streamlined the invoice management process, reducing errors and improving efficiency in financial operations.</p>
+            <h5>Tools Used:</h5>
+            <ul class="list-inline">
+                <li class="list-inline-item"><i class="fab fa-quickbooks"></i> QuickBooks</li>
+                <li class="list-inline-item"><i class="fas fa-code"></i> PODIO</li>
+                <li class="list-inline-item"><i class="fab fa-slack"></i> Slack</li>
+            </ul>
+            <h5>Outcome:</h5>
+            <p>Streamlined the invoice management process, reducing errors and improving efficiency in financial operations.</p>
+        </li>
+        <li>
+            <h4>Enhanced Property Documentation System</h4>
+            <p>Implemented a secure and organized system for maintaining property-related documents, improving accessibility and record-keeping. Enhanced the company's document management process, ensuring critical property information was securely stored and easily accessible.</p>
+            <h5>Tools Used:</h5>
+            <ul class="list-inline">
+                <li class="list-inline-item"><i class="fab fa-google-drive"></i> Google Drive</li>
+                <li class="list-inline-item"><i class="fas fa-file-alt"></i> Enhanced the company's document management process, ensuring critical property information was securely stored and easily accessible.</li>
+            </ul>
+            <h5>Outcome:</h5>
+            <p>Streamlined the invoice management process, reducing errors and improving efficiency in financial operations.</p>
+        </li>
+    </ul>
+</section>
+
+
+<section id="certificates" class="section" style="display: none;">
+    <div class="container">
+        <h2 class="section-heading">Certificates</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="certificate">
+                    <h4>Kolehiyo ng Lungsod ng Dasmariñas</h4>
+                    <p>Webinar Series - IS Talks: Blockchain Technology</p>
+                    <p>JANUARY 5, 2023</p>
+                    <img src="Samson.png" alt="Certificate Image" class="img-fluid">
+                </div>
+            </div>
+            <!-- Add more certificates as needed -->
+        </div>
+    </div>
+</section>
+
+
+<section id="contact" class="section" style="display: none;">
+    <h2 class="section-heading">Contact</h2>
+    <p>If you would like to get in touch, feel free to reach out via email at benchsamson87@gmail.com or call me at 09953015725.</p>
+    <p>You can also download my CV <a href="Bench_Samson_Official_CV.pdf" download>Bench_Samson_Official_CV</a>.</p>
+</section>
+
+
+<script>
+    // Add event listeners to navbar links to toggle section visibility
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            const sectionId = link.getAttribute('href').substring(1); // Get section id from href attribute
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'none'; // Hide all sections
+            });
+            document.getElementById(sectionId).style.display = 'block'; // Show the clicked section
+        });
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
